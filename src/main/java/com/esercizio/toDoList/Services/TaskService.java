@@ -1,4 +1,4 @@
-package Services;
+package com.esercizio.toDoList.Services;
 
 import com.esercizio.toDoList.dao.TasksDao;
 import com.esercizio.toDoList.entities.Entity;
@@ -67,5 +67,7 @@ public class TaskService {
     public void deleteTask(int id){
         tasksdao.delete(id);
     }
+
+    
 }
 

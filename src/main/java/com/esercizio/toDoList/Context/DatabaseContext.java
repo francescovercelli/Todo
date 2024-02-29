@@ -1,4 +1,4 @@
-package com.Context;
+package com.esercizio.toDoList.Context;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
