@@ -18,7 +18,7 @@ public class TaskService {
     @Autowired
     private ApplicationContext context;
 
-    public List<Tasks> findAll(){
+    public  List<Tasks> findAll(){
 
         //salvo i dati della read nella mappa che abbiamo chiamata data
         Map<Integer, Entity> data = tasksdao.read();
