@@ -1,4 +1,4 @@
-package main.java.com.esercizio.toDoList.entities;
+package com.esercizio.toDoList.entities;
 
 public abstract class Entity {
     private int id;

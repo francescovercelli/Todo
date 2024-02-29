@@ -1,6 +1,8 @@
-package main.java.com.esercizio.toDoList.dao;
+package com.esercizio.toDoList.dao;
 
 import java.util.Map;
+
+import com.esercizio.toDoList.entities.Entity;
 
 public interface IDAO {
     public void create(Entity e);

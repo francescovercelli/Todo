@@ -1,4 +1,4 @@
-package main.java.com.esercizio.toDoList.dao;
+package com.esercizio.toDoList.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

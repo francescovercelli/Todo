@@ -1,13 +1,15 @@
-package main.java.com.esercizio.toDoList.entities;
+package com.esercizio.toDoList.entities;
+
+import java.sql.Date;
 
 public class Tasks extends Entity {
 
     private String description_;
-    private date due_date;
+    private Date due_date;
     private boolean completed;
     private int category_id;
     
-    public Tasks(int id, String description_, date due_date, boolean completed, int category_id) {
+    public Tasks(int id, String description_, Date due_date, boolean completed, int category_id) {
         super(id);
         this.description_ = description_;
         this.due_date = due_date;
@@ -23,11 +25,11 @@ public class Tasks extends Entity {
         this.description_ = description_;
     }
 
-    public date getDue_date() {
+    public Date getDue_date() {
         return due_date;
     }
 
-    public void setDue_date(date due_date) {
+    public void setDue_date(Date due_date) {
         this.due_date = due_date;
     }
 
