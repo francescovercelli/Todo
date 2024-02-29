@@ -5,12 +5,13 @@ import com.esercizio.toDoList.entities.Entity;
 import com.esercizio.toDoList.entities.Tasks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.scheduling.config.Task;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class TaskService {
     @Autowired
     private TasksDao tasksdao;
