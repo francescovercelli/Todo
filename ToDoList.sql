@@ -1,5 +1,12 @@
 CREATE DATABASE ToDoApp;
 USE todoapp;
+
+create table Categories
+(
+id int primary key auto_increment,
+name_ varchar(100)
+);
+
 Create table Tasks
 (
 id int Primary key auto_increment,
@@ -7,15 +14,10 @@ description_ varchar(400),
 due_date date,
 completed bool,
 category_id int,
-Foreign key (category_id) references Category(id)
+Foreign key (category_id) references Categories(id)
 );
-create table Categories 
-(
-id int primary key auto_increment,
-name_ varchar(100)
-);
-alter table category rename to categories;
-alter table categories rename column name to name_;
+
+
 
 INSERT INTO Categories (name_) VALUES ('Lavoro');
 INSERT INTO Categories (name_) VALUES ('Casa');
